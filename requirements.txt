@@ -1,3 +1,9 @@
 setuptools>=65.0.0
 wheel>=0.38.0
 build>=0.10.0
+
+# Dependências de Testes
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-html>=4.1.0
+coverage>=7.3.0

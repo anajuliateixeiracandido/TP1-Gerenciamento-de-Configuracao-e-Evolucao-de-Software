@@ -1,5 +1,6 @@
 from .produto import Produto
 
+
 class Estoque:
     def __init__(self):
         self.produtos = {}
@@ -19,4 +20,6 @@ class Estoque:
 
     def verificar_disponibilidade(self, produto_id, quantidade):
         produto = self.buscar_produto(produto_id)
-        return produto and produto.estoque >= quantidade
+        if produto is None:
+            return False
+        return produto.estoque >= quantidade
